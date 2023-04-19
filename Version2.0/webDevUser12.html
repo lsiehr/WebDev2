@@ -76,6 +76,24 @@
         right: 0%;
       }
 
+      .brow {
+        background: #714722;
+        width: 100%;
+        height: 20%;
+        position: relative;
+        top: -90%;
+      }
+
+      .left.brow {
+        left: 10%;
+        transform: rotate(10deg);
+      }
+
+      .right.brow {
+        right: 10%;
+        transform: rotate(-10deg);
+      }
+
       #mouth {
         position: relative;
         width: 40%;
@@ -95,7 +113,7 @@
       }
 
       #tongue {
-        position: absolute;
+        position: relative;
         top: 100%;
         left: 50%;
         transform: translate(-120%, 30%);
@@ -144,9 +162,11 @@
       <div id="face">
         <div class="left eye">
           <div class="left pupil"></div>
+          <div class="left brow"></div>
         </div>
         <div class="right eye">
           <div class="right pupil"></div>
+          <div class="right brow"></div>
         </div>
         <div id="mouth">
           <div id="tongue"></div>
