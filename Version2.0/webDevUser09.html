@@ -6,9 +6,7 @@
     -->
 
 <head>
-
-    <title>User ## Version 2.0 </title>
-
+    
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,8 +17,62 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: rgb(255, 0, 149);
+    margin-top: 2rem;
+}
 
-    </style>
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background: #000000;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 25%;
+}
+
+.right.eye {
+    right: 25%;
+}
+.pupil {
+    background: #ff0000;
+    width: 10%;
+    height: 50%;
+    position: relative;
+    left: 30%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 20%;
+    left: 35%;
+    height: 15%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #ffffff;
+    
+}
+#banner{
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+}
+</style>
 </head>
 
 <body>
@@ -41,7 +93,17 @@
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Where you will have endless fun</h2>
-
+            
+            <h1>MOST FUN EVER </h1>
+            <section>
+                <h2>You will never get board </h2>
+                <p>there is so much to do </p>
+            </section>
+            
+            <section>
+                <h2>you can hang with the boy Gerald </h2>
+                <p>Gerald is the most fun guy every </p>
+            </section>
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
             <del>no flase info   </del>
             <hr> 
@@ -58,9 +120,19 @@
         <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
+            His name is Gerald
         </div>
         <div id="face">
-
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div class="right eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div id="mouth">
+           </div>
         </div>
     </main>
 
