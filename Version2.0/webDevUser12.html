@@ -2,7 +2,7 @@
 <html lang="en">
   <!--Version 2.0
         Name: Matthew Leisure
-        Date Completed: 4/18/23
+        Date Completed: 4/19/23
     -->
 
   <head>
@@ -46,7 +46,7 @@
       .eye {
         width: 29%;
         height: 29%;
-        background: #f49a9a;
+        background: #ffadad;
         position: absolute;
         top: 20%;
       }
@@ -85,6 +85,22 @@
         border-radius: 50%;
         top: 40%;
         border-bottom-color: #ff0000;
+      }
+
+      div#tongue {
+        border-radius: 0 0 50% 50%;
+        margin: 200;
+        padding: 0;
+        background-color: rgb(255, 92, 92);
+      }
+
+      #tongue {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-120%, 30%);
+        height: 40%;
+        width: 30%;
       }
     </style>
   </head>
@@ -132,7 +148,10 @@
         <div class="right eye">
           <div class="right pupil"></div>
         </div>
-        <div id="mouth"></div>
+        <div id="mouth">
+          <div id="tongue"></div>
+        </div>
+        </div>
       </div>
     </main>
 
