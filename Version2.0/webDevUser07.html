@@ -20,7 +20,59 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
-    <style></style>
+    <style>
+      div#face {
+        width: 40vw;
+        height: 40vw;
+        max-width: 400px;
+        max-height: 400px;
+        margin: 0 auto;
+        position: relative;
+        background: rgb(255, 0, 0);
+        margin-top: 2rem;
+      }
+
+      div#face,
+      div#face * {
+        border-radius: 50%;
+      }
+
+      .eye {
+        width: 25%;
+        height: 25%;
+        background: #fff;
+        position: absolute;
+        top: 20%;
+      }
+
+      .left.eye {
+        left: 20%;
+      }
+
+      .right.eye {
+        right: 20%;
+      }
+
+      .pupil {
+        background: #000;
+        width: 50%;
+        height: 50%;
+        position: relative;
+        left: 25%;
+        transform-origin: bottom;
+      }
+
+      #mouth {
+        position: relative;
+        width: 60%;
+        left: 20%;
+        height: 25%;
+        border: 1vw solid transparent;
+        border-radius: 50%;
+        top: 50%;
+        border-bottom-color: #000000;
+      }
+    </style>
   </head>
 
   <body>
@@ -29,8 +81,9 @@
       <h1>About Me</h1>
       <div id="tags">
         <p>
-          This is my first webpage and test 2! I was able to code all the HTML and CSS in
-          order to make it. Watch out world of web design here I come!
+          This is my first webpage and test 2! I was able to code all the HTML
+          and CSS in order to make it. Watch out world of web design here I
+          come!
         </p>
 
         <h2>Heading Examples</h2>
@@ -47,21 +100,62 @@
         <h2>Examples of "Other" HTML elements</h2>
 
         <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-        I am from <del>Shakopee.</del> and I can use the 'br' tag to go to a new line.<br>
-        <ins>I can underline text like this!</ins> <br>
-        <sub>Here's some subscript.</sub> <br>
-        <sup>Or some superscipt!</sup> <br>
-        <small>Small script cna be used for little details.</small> <br> <br>
-        <progress value="89" max="100" > </progress > <br> <br>
+        I am from <del>Shakopee.</del> and I can use the 'br' tag to go to a new
+        line.<br />
+        <ins>I can underline text like this!</ins> <br />
+        <sub>Here's some subscript.</sub> <br />
+        <sup>Or some superscipt!</sup> <br />
+        <small>Small script cna be used for little details.</small> <br />
+        <br />
+        <progress value="89" max="100"></progress> <br />
+        <br />
         Here is a horisontal line below
-        <hr>
+        <hr />
         <abbr title="North Dakota State University"> NDSU </abbr>
-        
-        
+
         <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
       </div>
-      <div id="banner"></div>
-      <div id="face"></div>
+      <div id="banner">This is a test</div>
+
+      <style>
+        #banner {
+          border: 5px outset red;
+          background-color: lightblue;
+          text-align: center;
+        }
+      </style>
+
+      <div id="face">
+        <div class="left eye">
+          <div class="pupil"></div>
+        </div>
+        <div class="right eye">
+          <div class="pupil"></div>
+        </div>
+        <div id="mouth"></div>
+      </div>
+
+      <h1>How and Why?</h1>
+      <section>
+        <h2>
+          How did they make a proramming language without one to begin with?
+        </h2>
+        <p>
+          Like i'm just supossed to believe that from plants and rocks we made a
+          computer that can send signals to space or to the otherside of the
+          world? Crazy.
+        </p>
+      </section>
+
+      <section>
+        <h2>Why do we wash towels?</h2>
+        <p>
+          Since we just got out of the shower, why would we wash the towels if
+          we are already clean. If anything we make the towel more clean because
+          we are putting our glorious smell all over it. Just doesnt make any
+          sense.
+        </p>
+      </section>
     </main>
 
     <footer>
