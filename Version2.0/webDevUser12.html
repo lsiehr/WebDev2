@@ -20,7 +20,73 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
-    <style></style>
+    <style>
+      #banner {
+        border: 5px outset red;
+        background-color: lightblue;
+        text-align: center;
+      }
+
+      div#face {
+        width: 40vw;
+        height: 40vw;
+        max-width: 400px;
+        max-height: 400px;
+        margin: 0 auto;
+        position: relative;
+        background: rgb(86, 254, 86);
+        margin-top: 2rem;
+      }
+
+      div#face,
+      div#face * {
+        border-radius: 20%;
+      }
+
+      .eye {
+        width: 29%;
+        height: 29%;
+        background: #f49a9a;
+        position: absolute;
+        top: 20%;
+      }
+
+      .left.eye {
+        left: 15%;
+      }
+
+      .right.eye {
+        right: 15%;
+      }
+
+      .pupil {
+        background: #3336ba;
+        width: 60%;
+        height: 60%;
+        position: relative;
+        top: 20%;
+        transform-origin: bottom;
+      }
+
+      .left.pupil {
+        left: 40%;
+      }
+
+      .right.pupil {
+        right: 0%;
+      }
+
+      #mouth {
+        position: relative;
+        width: 40%;
+        left: 15%;
+        height: 20%;
+        border: 1vw solid transparent;
+        border-radius: 50%;
+        top: 40%;
+        border-bottom-color: #ff0000;
+      }
+    </style>
   </head>
 
   <body>
@@ -32,31 +98,42 @@
           This is my first webpage! I was able to code all the HTML and CSS in
           order to make it. Watch out world of web design here I come!
         </p>
+        <section>
+          <h2>Heading Examples</h2>
 
-        <h2>Heading Examples</h2>
+          <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>heading 6</h6>
+          <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+        </section>
 
-        <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>heading 6</h6>
-        <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+        <section>
+          <h2>Examples of "Other" HTML elements</h2>
 
-        <h2>Examples of "Other" HTML elements</h2>
-
-        <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-        <del>Strike</del>
-        <ins>Underline</ins>
-        <sub>Subscript</sub>
-        <sup>Superscript</sup>
-        <small>Small</small>
-        <progress value="22" max="100"></progress>
-        <hr />
-        <abbr title="World Health Organization">WHO</abbr>
-        <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+          <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+          <del>Strike</del>
+          <ins>Underline</ins>
+          <sub>Subscript</sub>
+          <sup>Superscript</sup>
+          <small>Small</small>
+          <progress value="22" max="100"></progress>
+          <hr />
+          <abbr title="World Health Organization">WHO</abbr>
+          <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+        </section>
       </div>
-      <div id="banner"></div>
-      <div id="face"></div>
+      <div id="banner">The Joker</div>
+      <div id="face">
+        <div class="left eye">
+          <div class="left pupil"></div>
+        </div>
+        <div class="right eye">
+          <div class="right pupil"></div>
+        </div>
+        <div id="mouth"></div>
+      </div>
     </main>
 
     <footer>
