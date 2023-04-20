@@ -19,7 +19,61 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+#banner{
+    border: 5px outset red;
+    background-color: greenyellow;
+    text-align: center;
+}
+div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 1000px;
+    margin: 0 auto;
+    position: relative;
+    background: rgb(0, 0, 255);
+    margin-top: 2rem;
+}
 
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 20%;
+}
+
+.right.eye {
+    right: 20%;
+}
+
+.pupil {
+    background: #000;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 100%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 100%;
+    border-bottom-color: #000;
+}
     </style>
 </head>
 
@@ -44,6 +98,16 @@
 <h1><progress value="75" max="100" > </progress ></h1>
 <h1><abbr title="National Aeronautics and Space Administration" > NASA </abbr></h1>
 <p><small>DONE</small></p>
+<h1>aliquet enim tortor</h1>
+<section>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
+
+<section>
+    <h2>1 2 3 4 5 6 7 8 9 </h2>
+    <p>10 11 12 13 14 15 16 17 18 19 20</p>
+</section>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
@@ -53,10 +117,19 @@
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
-        </div>
         <div id="face">
 
         </div>
+        <div class="left eye">
+            <div class="pupil">
+            </div>
+       </div>
+       <div class="right eye">
+            <div class="pupil">
+            </div>
+       </div>
+       <div id="mouth">
+       </div>
     </main>
 
 
@@ -69,4 +142,4 @@
     </footer>
 </body>
 
-</html>
+</html>  
