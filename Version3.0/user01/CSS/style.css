@@ -5,7 +5,12 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
+}
+body {
+    background-color: rgb(85, 27, 140);
+    color: azure;
+    font-size: 1.1em;
 }
 
 tr {
