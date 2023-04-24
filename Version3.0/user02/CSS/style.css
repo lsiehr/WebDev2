@@ -8,6 +8,12 @@ table {
 	cellspacing: 0px;
 }
 
+body {
+  background-color: darkslategrey;
+  color: azure;
+  font-size: 1.1em;
+}
+
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
@@ -18,4 +24,12 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+ol {
+  color:#99a9f0
+}
+
+ul {
+  color:#eb7274 
 }
