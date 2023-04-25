@@ -1,7 +1,7 @@
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
-	margin-left: auto;
+	color: #060000;
+	margin-left: 0;
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
@@ -9,9 +9,9 @@ table {
 }
 
 tr {
-	border: 1px solid #ffffff;
+	border: 2px solid #070000;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:rgb(161, 133, 232); 
 }
 
 th {
