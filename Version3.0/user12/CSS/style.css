@@ -20,6 +20,11 @@ th {
 	background-color: #003366;
 }
 
+td.rank {
+	color: #00ff00;
+	background-color: sienna
+}
+
 ol {
 	color: #00521a;
 	background-color: #0033663b;

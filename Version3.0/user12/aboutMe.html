@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <!--Version 3.0
-        Name: Matthew
+        Name: Matthew Leisure
         Date Completed: 4/26/23
     -->
 
   <head>
-    <title>Music for Web Dev User ##</title>
-
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://iconifier.net/iconified/20230425014936_Pug/apple-touch-icon-180x180.png"
-    />
+    <title>Web Dev User ##</title>
 
     <!-- Meta -->
     <meta charset="utf-8" />
@@ -21,7 +15,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="My Favorite Music" />
+    <meta name="description" content="SHS WebDev Version 3.0" />
 
     <!-- CSS -->
     <link
@@ -56,14 +50,36 @@
         text-align: center;
       }
 
-      td {
-        color: #ff0000;
+      h3 {
+        padding: 50px;
+        background-color: lavender;
+        display: inline-block;
+        border: 1px solid #5d6063;
+      }
+
+      p {
+        border-bottom: 1px solid #5d6063;
+        border-right: 3px dotted #0000ff;
+        border-top: 5px inset;
+        border-left: 3px dashed #e9e9e9;
+        padding: 5px 50px 30px 5px;
+        margin-bottom: 50px; /* Add this */
+        background-color: lavender;
+        padding: 5px 50px 30px 5px;
+        background-color: lavender;
+        margin-top: 25px;
+        margin-bottom: 50px;
+      }
+
+      strong {
+        padding: 50px;
+        background-color: lightblue;
       }
     </style>
   </head>
 
   <body>
-    <!---------------------------------- Begin the nav-bar ------------->
+    <!---------------------------------- Begin the nav-bar ------------------------------------------>
     <menu>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
@@ -75,13 +91,12 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav">
             <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
             <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="aboutMe.html" class="nav-item nav-link">About Me</a>
-            <a href="music.html" class="nav-item nav-link active">Music</a>
+            <a href="aboutMe.html" class="nav-item nav-link active">About Me</a>
+            <a href="music.html" class="nav-item nav-link">Music</a>
             <a href="list.html" class="nav-item nav-link">Lists</a>
             <a href="#" class="nav-item nav-link disabled" tabindex="-1"
               >Games</a
@@ -100,99 +115,34 @@
           </div>
         </div>
       </nav>
+      <!---------------------------------- End the nav-bar ------------------------------------->
     </menu>
-    <!---------------------------------- End the nav-bar ------------------------------------->
 
     <main class="wideMargin">
-      <h1 class="text-left my-3" tabindex="0">Music</h1>
+      <h1 class="text-left my-3">About Me</h1>
       <!-- Edit this line for the title of your page -->
 
       <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-      <h2>My Top 5 Favorite Songs</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>Artist</th>
-            <th>Song</th>
-            <th>Album Art</th>
-          </tr>
-        </thead>
-        <tr>
-          <td class="rank">1</td>
-          <td>King harvest</td>
-          <td>Dancing in the Moonlight</td>
-          <td>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/DancingInTheMoonlightKingHarvestSingle.jpg/220px-DancingInTheMoonlightKingHarvestSingle.jpg"
-              alt="King harvest Dancing in the Moonlight"
-              width="200"
-              height="200"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td class="rank">2</td>
-          <td>Eminem</td>
-          <td>The Real Slim Shady</td>
-          <td>
-            <img
-              src="images/Eminem_-_The_Real_Slim_Shady_CD_cover.jpg"
-              alt="Eminem The Real Slim Shady"
-              width="200"
-              height="200"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td class="rank">3</td>
-          <td>Modest Mouse</td>
-          <td>Float On</td>
-          <td>
-            <img
-              src="images/Modest_mouse_float_on.jpeg"
-              alt="Modest Mouse Float On"
-              width="200"
-              height="200"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td class="rank">4</td>
-          <td>Highly Suspect</td>
-          <td>Lydia</td>
-          <td>
-            <img
-              src="images/Highly_Suspect_lydia.jpeg"
-              alt="Highly Suspect Lydia"
-              width="200"
-              height="200"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td class="rank">5</td>
-          <td>Okilly Dokilly</td>
-          <td>Reneducation</td>
-          <td>
-            <img
-              src="images/okilly_dokilly_reneducation.jpeg"
-              alt="Okilly Dokilly Reneducation"
-              width="200"
-              height="200"
-            />
-          </td>
-        </tr>
-      </table>
+      <h3>Headings Are Block Elements</h3>
+
+      <p>
+        paragraphs are blocks, too.<em>However</em>, &lt;em&gt; and
+        &lt;strong&gt; elements are not. They are
+        <strong>inline</strong> elements.
+      </p>
+
+      <div style="padding-top: 1px"></div>
+
+      <p>
+        Block elements define the flow of the HTML document, while inline
+        elements do not.
+      </p>
+      <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
     </main>
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
     <!---------------------------------- Begin the footer ------------->
     <footer class="wideMargin">
-      <div>
-        Music can be found here
-        <a href="https://music.amazon.com"> Amazon Music</a>
-      </div>
+      <div>Webpage made by <a href="#" target="_blank">Matthew Leisure</a></div>
     </footer>
     <!---------------------------------- End the footer ------------->
   </body>
