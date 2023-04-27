@@ -25,3 +25,15 @@ X3
  td {
      color: #ffb43b89;
     }
+	.title{
+		color: red;
+		font-family: 'Trebuchet MS', sans-serif; 
+	  }
+	  
+	  .title-large {
+		font-size: 2rem;
+	  }
+	  
+	  .title-small {
+		font-size: .5rem;
+	  }
