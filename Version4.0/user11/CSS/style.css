@@ -53,11 +53,8 @@
 	
 }
 
-*{
-    text-align:right;
-    border: 2px solid black;
-	box-shadow: #ff0000;
-	background-color: #6610cf;
+img{
+	width:100%;
 }
 
 td{
