@@ -1,3 +1,5 @@
+@import url(rainbow.css);
+
 .button {
   background-color: #4caf50;
   border: none;
@@ -27,7 +29,6 @@
   transform: translateY(80px);
   background-color: black;
 }
-
 
 .button1 {
   border-radius: 8px;
@@ -151,7 +152,63 @@ h6 {
   background-color: cadetblue;
 }
 
-*{
-  text-align:center;
+* {
   outline: none;
+}
+
+#knowledge > * {
+  border: 3px red solid;
+}
+
+p + * {
+  background-color: #ffff00;
+}
+
+#smile li::marker {
+  content: "😜 ";
+}
+
+#rainbow td:hover {
+  background-color: black;
+}
+
+
+#btn {
+  width: 200px;
+  height: 50px;
+  background-color: #000000;
+  color: white;
+  border-radius: 4px;
+}
+
+#btn:active {
+  width: 400px;
+}
+
+
+#btn2 {
+  width: 200px;
+  height: 50px;
+  background-color: #a90000;
+  color: white;
+  transition: 0.4s ease-in-out;
+  border: none;
+  border-radius: 10px;
+}
+
+#btn2:hover {
+  width: 175px;
+  height: 45px;
+}
+
+
+#para {
+  color: black;
+  font-family: Verdana;
+  font-size: 1.3vw;
+  transition: 0.3s ease-in-out;
+}
+
+#para:hover {
+  color: white;
 }
