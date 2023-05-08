@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -123,8 +124,29 @@ h1, h2, h3, h4, h5, h6 {
   #hireButtons {
 	background-color: rgb(50, 110, 120);
   }
-  #footerTable {background-color:#571642}
+  #footerTable {background-color:#c5acbd}
   *{
     text-align:right;
-    border: 1px solid rgb(20, 171, 53);
+    border: 0.5px solid rgb(11, 35, 16);
 }
+#knowledge > * {
+	border: 1px rgb(68, 48, 48) solid;
+  }
+  p + * {
+	background-color: #FFFF00;
+  }
+  div li::marker{
+	color: rgb(107, 150, 160);
+  }
+  div li::marker{
+	content:".҉ ";
+  }
+  td:hover {
+	background-color: rgb(52, 43, 43);
+  }
+  div:hover {
+	background-color: rgb(162, 210, 237);
+  }	
+  div + * {
+	background-color: #8bcf91;
+  }
