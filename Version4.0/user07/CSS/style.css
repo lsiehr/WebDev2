@@ -160,10 +160,6 @@ h6 {
   border: 3px red solid;
 }
 
-p + * {
-  background-color: #ffff00;
-}
-
 #smile li::marker {
   content: "😜 ";
 }
