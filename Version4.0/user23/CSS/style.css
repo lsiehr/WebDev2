@@ -1,4 +1,8 @@
+
 table {
+    text-align:right;
+    border: 2px solid black;
+}
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
 	margin-left: auto;
@@ -18,4 +22,17 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
-}
+}.title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }#morecontent {
+	background-color: yellow;
+  }
