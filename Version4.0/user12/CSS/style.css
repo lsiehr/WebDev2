@@ -1,3 +1,5 @@
+@import url(rainbow.css);
+
 #morecontent {
   background-color: yellow;
 }
@@ -12,6 +14,10 @@
   box-shadow: 1px 1px;
   border-radius: 5%;
   background-color: rgba(225, 225, 225, 0.149);
+}
+
+#knowledge > * {
+  border: 3px red solid;
 }
 
 .title {
@@ -95,4 +101,20 @@ h4,
 h5,
 h6 {
   text-align: center;
+}
+
+.color_changing > td:hover {
+  background-color: black;
+}
+
+p + * {
+  background-color: #ffff00;
+}
+
+div > li::marker {
+  content: "😜";
+}
+
+ul > li::marker {
+  color: red;
 }
