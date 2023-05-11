@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button1 {
 	background-color: #4CAF50;
 	border: none;
@@ -10,7 +11,6 @@
 	margin: 4px 2px;
 	cursor: pointer;
 }
-
 .button2 {
 	background-color: #ff0000;
 	border: none;
@@ -23,7 +23,9 @@
 	margin: 4px 2px;
 	cursor: pointer;
 }
-
+td:hover {
+	background-color: black;
+  }
 .button3 {
 	border-radius: 30%;
 }
@@ -84,7 +86,21 @@
 		font-size: 16px;
 		margin: 4px 2px;
 		cursor: pointer; }
-
+		div li::marker{
+			color: rgb(0, 255, 64);
+		  }
+		  div > *::marker{
+			content:"😜 ";
+		  }
+		#knowledge > * {
+			border: 3px red solid;
+		  }
+		  p + * {
+			background-color: #FFFF00;
+		  }
+		  selector:pseudo-class {
+			property: value;
+		  }
 td{
 	padding:20px;
 }
