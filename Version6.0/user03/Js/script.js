@@ -21,10 +21,24 @@ function myupperFunction() {
     x.value = x.value.toUpperCase();
 }
 
-  function mOver(obj) {
+function mOver(obj) {
     obj.innerHTML = "Thank You"
   }
   
-  function mOut(obj) {
+function mOut(obj) {
     obj.innerHTML = "Mouse Over Me"
   }
+  document.getElementById("myBtn").onclick = displayDate;
+
+  function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+  }
+  function checkCookies() 
+    var text = "";
+    if (navigator.cookieEnabled == true) {
+      text = "Cookies are enabled.";
+    } else {
+      text = "Cookies are not enabled.";
+    }
+    document.getElementById("demo").innerHTML = text;
+    
