@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  alert("beat the game");
+}
+</script>
+</head>
+
+<body onload="myFunction()">
+<h2>Hello World!</h2>
+</body>
+
+</html>
 <script language="JavaScript">
 
     var startTime=new Date();
@@ -153,4 +168,49 @@ setTimeout('scroll_text()',100)
     <input type="text" name="field" size="50"><p>
     </form>
     </CENTER>
-    </body>
+    <html>
+<head>
+<script>
+var myWindow;
+function openWin() {
+  myWindow = window.open("", "", "width=400, height=200");
+}
+
+function closeWin() {
+  myWindow.close();
+}
+</script>
+</head>
+<body>
+
+<input type="button" value="Open 'myWindow'" onclick="openWin()" />
+<input type="button" value="Close 'myWindow'" onclick="closeWin()" />
+
+</body>
+</html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+"Screen width is " + screen.width;
+</script>
+
+</body>
+</html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+"Screen height is " + screen.height;
+</script>
+
+</body>
+</html>
+
+</body>
