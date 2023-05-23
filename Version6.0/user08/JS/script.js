@@ -27,17 +27,4 @@ function myFunction() {
     fname = document.forms[0].fname.value;
     alert("Hello " + fname + "! You will now be redirected to Todays assignment in");
   }
-  function whichElement(e) {
-    var targ;
-    if (!e) {
-      var e = window.event;
-    }
-    if (e.target) {
-      targ=e.target;
-    } else if (e.srcElement) {
-      targ=e.srcElement;
-    }
-    var tname;
-    tname = targ.tagName;
-    alert("You clicked on a " + tname + " element.");
-  }
+  
