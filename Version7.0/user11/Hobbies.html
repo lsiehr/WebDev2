@@ -18,38 +18,83 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/SampleJS.js"></script>
+    
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
+        .Light {
+            background-color: #C1E0F7;
+        }
+        .Cyan {
+            background-color: #97F9F9;
+        }
+        .Sport {
+            width: 250px;
+            height: 200px;
+        }
+    </style>
 
 </head>
 
 
 <body>
-    <!---------------------------------- Begin the nav-bar ------------->
-    <menu>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="Intro.html" class="nav-item nav-link active">Intro</a>
-                    <a href="Hobbies.html" class="nav-item nav-link active">Hobbies</a>
-                    <a href="Achievements.html" class="nav-item nav-link active">Achievements</a>
-                    <a href="" class="nav-item nav-link">Gallery</a>
-                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
-                </div>
-                <div class="navbar-nav ml-auto">
-                    <a href="#" class="nav-item nav-link active">Luca Djukic</a>
-                </div>
+    <nav class="navbar navbar-expand-lg" style="background-color: #A4DEF9;">
+        <a style="color: #010b0f;" class="navbar-brand" href="#">WebDevelopment</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a style="color: #010b0f;" class="nav-item nav-link active" href="Intro.html">Intro<span class="sr-only">(current)</span></a>
+            <a style="color: #010b0f;" class="nav-item nav-link active" href="Hobbies.html">Hobbies</a>
+            <a style="color: #010b0f;" class="nav-item nav-link active" href="Achievements.html">Achievements</a>
+            <a style="color: #010b0f;" class="nav-item nav-link active" href="Coding.html">Coding</a>
+        </div>
+        <div class="navbar-nav ml-auto">
+            <a style="color: #010b0f;" href="#" class="nav-item nav-link active">Luca Djukic</a>
             </div>
+          </div>
         </nav>
-    </menu>
 
+<header class="Light">
+    <a><center>Sports I play</center></a>
+</header>
+<Middle>
+        <div class="col-sm-6">
+            <div>
+                <center>
+                <a href="https://www.shakopeeboysbasketball.com/"><img class="Sport" src="images/Basketball.png" alt="Me Playing Basketball"/></a>
+                </center>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div>
+                <center>
+                    <a href="https://www.shakopeesoccer.com/"><img class="Sport" src="images/Soccer.png" alt="Me Playing Soccer"/></a>
+                </center>
+            </div>
+        </div>
+
+</Middle>
     </body>
 
-    <footer class="page-footer font-small blue pt-4">
+    <footer class="page-footer font-small blue pt-4" style="background-color: #A4DEF9;">
 
         <!-- Footer Links -->
         <div class="container-fluid text-center text-md-left">
@@ -61,8 +106,8 @@
             <div class="col-md-6 mt-md-0 mt-3">
       
               <!-- Content -->
-              <h5 class="text-uppercase">Footer Content</h5>
-              <p>Checking your email is important way to contact people and to buisnesses to keep organized. If you have questions contact us through social media or email.</p>
+              <h5 class="text-uppercase">Luca Djukic</h5>
+              <p>Made by Luca Djukic for class Web Development for Activity 1.7 Bringing it all Together assignment. I used JavaScript and bootstrap along with my knowledge of coding to create this beautiful website.</p>
       
             </div>
             <!-- Grid column -->
@@ -94,16 +139,12 @@
                 </li>
                 <li>
                     <i class="fa fa-envelope-open"></i>
-                  <a hrek="https://www.google.com/gmail/about/">Gmail</a>
+                  <a href="https://www.google.com/gmail/about/">Gmail</a>
                 </li>
               </ul>
       
             </div>
-            <!-- Grid column -->
-      
-            <!-- Grid column -->
-    
-        <!-- Copyright -->
+
         <div class="footer-copyright text-center py-3">© 2023 Copyright:
           <a>LucaDjukic.org</a>
         </div>
