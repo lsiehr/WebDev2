@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSScape - Prices</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="icon" type="image/x-icon" href="images/CSScape logo.png">
+
+    <script defer src="JS/app.js"></script>
+
+    <style>
+      .lip::before {
+        content: "→ ";
+        color: red;
+      }
+      .lip {
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-item is-size-3 has-text-white">
+          CSScape
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="index.html" class="navbar-item has-text-white"> Home </a>
+
+          <a href="aboutUs.html" class="navbar-item has-text-white">
+            About Us
+          </a>
+
+          <a href="prices.html" class="is-active navbar-item has-text-white">
+            Prices
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <a href="availibility.html" class="navbar-item has-text-white">
+            Availibility
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="" style="background-color: #1e2127; height: 850px">
+      <div class="columns">
+        <div class="column is-full has-text-centered pt-5">
+          <h1
+            class="is-size-1 has-text-weight-semibold has-text-white"
+            style="color: #2a2e36"
+          >
+            Choose Your Plan
+          </h1>
+        </div>
+      </div>
+      <div class="columns is-vcentered">
+        <!-- Basic Plan -->
+
+        <div class="column is-one-fifth is-offset-one-fifth">
+          <div class="" style="background-color: #2a2e36; border-radius: 10px">
+            <h3
+              class="pt-5 is-size-4 is-uppercase has-text-white has-text-weight-medium has-text-centered"
+            >
+              basic
+            </h3>
+
+            <div class="mt-4 has-text-centered">
+              <h4
+                class="has-text-white is-size-2 has-text-weight-semibold"
+                style="display: inline"
+              >
+                $200
+              </h4>
+              <h4 class="is-size-5" style="display: inline; color: #909ab1">
+                /website
+              </h4>
+            </div>
+
+            <ul
+              class="ml-6 has-text-white mt-6 is-size-6"
+              style="list-style: none inside"
+            >
+              <li class="lip">1 website</li>
+              <li class="lip">Limited support</li>
+              <li class="lip">Within 2 weeks</li>
+              <li class="lip">No domain</li>
+              <li class="lip">Smaller team</li>
+              <li class="lip">Static</li>
+              <li class="lip">Not that powerful</li>
+            </ul>
+
+            <div class="has-text-centered">
+              <button
+                onclick="purchasePlan('basic')"
+                class="button mt-5 mb-3 has-text-white purchaseBtn"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Standard -->
+
+        <div class="column is-one-fifth">
+          <div
+            class=""
+            style="
+              background-color: #2a2e36;
+              border-radius: 10px;
+              border: solid red 3px;
+            "
+          >
+            <h3
+              class="pt-5 is-size-4 is-uppercase has-text-white has-text-weight-medium has-text-centered"
+            >
+              Standard
+            </h3>
+
+            <div class="mt-5 has-text-centered">
+              <h4
+                class="has-text-white is-size-2 has-text-weight-semibold"
+                style="display: inline"
+              >
+                $550
+              </h4>
+              <h4 class="is-size-5" style="display: inline; color: #909ab1">
+                /website
+              </h4>
+            </div>
+
+            <ul
+              class="ml-6 has-text-white mt-6 is-size-6"
+              style="list-style: none inside"
+            >
+              <li class="lip">1 website</li>
+              <li class="lip">Unlimited support</li>
+              <li class="lip">Within 2.5 weeks</li>
+              <li class="lip">Comes with domain</li>
+              <li class="lip">Large team</li>
+              <li class="lip">Dynamic</li>
+              <li class="lip">Powerful</li>
+            </ul>
+
+            <div class="has-text-centered">
+              <button
+                onclick="purchasePlan('standard')"
+                class="button my-5 has-text-white purchaseBtn"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Business -->
+
+        <div class="column is-one-fifth">
+          <div class="" style="background-color: #2a2e36; border-radius: 10px">
+            <h3
+              class="pt-5 is-size-4 is-uppercase has-text-white has-text-weight-medium has-text-centered"
+            >
+              business
+            </h3>
+
+            <div class="mt-4 has-text-centered">
+              <h4
+                class="has-text-white is-size-2 has-text-weight-semibold"
+                style="display: inline"
+              >
+                $1200
+              </h4>
+              <h4 class="is-size-5" style="display: inline; color: #909ab1">
+                /website
+              </h4>
+            </div>
+
+            <ul
+              class="ml-6 has-text-white mt-6 is-size-6"
+              style="list-style: none inside"
+            >
+              <li class="lip">1 website</li>
+              <li class="lip">Unlimited support</li>
+              <li class="lip">Within 2 weeks</li>
+              <li class="lip">Comes with domian</li>
+              <li class="lip">Huge team</li>
+              <li class="lip">Dynamic</li>
+              <li class="lip">Powerful</li>
+            </ul>
+
+            <div class="has-text-centered">
+              <button
+                onclick="purchasePlan('business')"
+                class="button mt-5 mb-3 has-text-white purchaseBtn"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="has-text-centered">
+        <h3 class="is-size-5 mx-6 mt-6" style="color: #3e4451">
+          We do not allow refunds. If you would like something changed with your
+          website please contact us. Contact information is located in the
+          footer or for convenience you an copy it from our availibility page. If
+          you reach a certain number of revisions (varies per website), you will
+          have to pay an additional fee per revision. The price of the revision
+          will depend on the size of adjustment. Thanks and enjoy your product!
+        </h3>
+      </div>
+    </div>
+
+    <!-- Line Break -->
+    <div style="height: 6px; background-color: red"></div>
+
+    <!--start of the footer-->
+    <footer class="footer">
+      <div class="columns">
+        <div class="column">
+          <h2 class="is-size-2 has-text-weight-semibold">By Ethan Sutrick</h2>
+          <h4 class="is-size-4">
+            The creator of your favorite website ever, CSScape
+          </h4>
+        </div>
+        <div class="column">
+          <h3 class="is-size-4 has-text-weight-medium"><u>London</u></h3>
+
+          <ul class="ml-2 officeLocations">
+            <li>csscapeLondon@mail.com</li>
+            <li>Ruby St, London SE15 1LR, United Kingdom</li>
+            <li>+44 20 0183 7803</li>
+            <li class="pt-3">
+              <a
+                href="https://www.google.com/maps/place/Ruby+St,+London+SE15+1LR,+UK/@51.4832083,-0.0634128,17.96z/data=!4m6!3m5!1s0x4876030e2cdaaa3b:0xe4c4291e7685bfdb!8m2!3d51.4830279!4d-0.0615943!16s%2Fg%2F1tfjd__n?authuser=0&entry=ttu"
+                target="_blank"
+                class="mapLocation"
+                ><u>See on map</u></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3 class="is-size-4 has-text-weight-medium"><u>New York</u></h3>
+
+          <ul class="ml-2 officeLocations">
+            <li>csscapeNewYork@mail.com</li>
+            <li>New York, NY 10011</li>
+            <li>+1 587 8130 7194</li>
+            <li class="pt-3">
+              <a
+                href="https://www.google.com/maps/place/SBF+JOB/@40.7445578,-74.0077914,18z/data=!4m15!1m8!3m7!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2sNew+York,+NY!3b1!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2!3m5!1s0x89c2594287b2d16f:0x3d6e4f4411801fe9!8m2!3d40.7444946!4d-74.0072858!16s%2Fg%2F11f8fxl17t?authuser=0&entry=ttu"
+                target="_blank"
+                class="mapLocation"
+                ><u>See on map</u></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="columns mt-4">
+        <div class="column is-one-fifth">
+          <div style="font-size: 20px">Subscribe to our newsletter:</div>
+        </div>
+        <div class="column is-three-fifths">
+          <div class="field has-addons">
+            <p class="control is-expanded">
+              <input
+                id="email-text"
+                class="input"
+                type="text"
+                placeholder="Email address for newsletter"
+              />
+            </p>
+            <p class="control">
+              <button onclick="newsSub()" class="button">Subscribe</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--end of the footer-->
+  </body>
+</html>

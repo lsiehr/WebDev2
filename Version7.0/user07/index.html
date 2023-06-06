@@ -1,221 +1,190 @@
+<!-- Made by Ethan Sutrick -->
+
 <!DOCTYPE html>
-<html lang="en">
-<!--Version 7.0 
-    Name:  
-    Date Completed: 
--->
-
-<head>
-    <title>Dynamic Webpage</title>
-
-    <!-- Bootstrap meta data -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Introduction to JavaScript">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!-- Animate -->
-    <link rel="stylesheet" href="CSS/style.css">
-
-    <!-- JavaScript -->
-    <!-- These are needed to get the responsive menu to work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSScape</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="icon" type="image/x-icon" href="images/CSScape logo.png">
+    
+    <script defer src="JS/app.js"></script>
 
     <style>
-        /* Internal Styling Here */
+      .linksection {
+        height: 300px;
+      }
+
     </style>
+  </head>
+  <body>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-item is-size-3 has-text-white">
+          CSScape
+        </a>
+      </div>
 
-</head>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="index.html" class="is-active navbar-item has-text-white">
+            Home
+          </a>
 
-<body>
-    <main>
-        <div id="built-in-functions">
-            <!-- ALERT-->
-            <script>
-                alert('Go Sabers!');
-            </script>
-            <!--PRINT-->
-            <script>
-                function printWindow(){
-                    window.print();
-                }
-            </script>
-            <!--LENGTH-->
-            <script>
-                function getLength() {
-                    document.getElementById("length").innerHTML = document.title.length;
-                }
-            </script>
-            <!-- FOCUS-->
-            <script>
-                function getFocus() {
-                    document.getElementById("focusButton").focus();
-                }
-            </script>
-            <!-- CLICK-->
-            <script>
-                function clickSimulation() {
-                    document.getElementById("Check").click();
-                }
-            </script>
-            <script>
-                function getDate() {
-                    document.getElementById("date").innerHTML = Date();
-                }
-            </script>
+          <a href="aboutUs.html" class="navbar-item has-text-white">
+            About Us
+          </a>
 
-            <div class="container-fluid mt-3 mb-3">
-                <div class="row">
-                    <!--PRINT-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" value="print this page" onclick="printWindow()">Print this
-                            page</button>
-                    </div>
-                    <!--LENGTH-->
-                    <div class="col-md-3">
-                        <button class="btn btn-dark btn-md" onclick="getLength()">The title has this many
-                            characters</button>
-                    </div>
-                    <div class="col-md-1">
-                        <p id="length"></p>
-                    </div>
-                    <!--FOCUS-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getFocus()">Focus</button>
-                    </div>
-                    <!-- CLICK-->
-                    <div class="col-md-1">
-                        <form>
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                        </form>
-                    </div>
-                    <!--DATE-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getDate()">Get Date</button>
-                    </div>
-                    <div class="col-md-3">
-                        <p id="date"></p>
-                    </div>
-                </div>
-            </div>
+          <a href="prices.html" class="navbar-item has-text-white"> Prices </a>
         </div>
-        <hr>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5">
-                    <h1>Heading for a long list</h1>
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                <li>Aliquam tincidunt mauris eu risus.
-                                    <ol>
-                                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            <ol>
-                                                <li>Lorem ipsum dolor sit amet, consectetuer.</li>
-                                            </ol>
-                                        </li>
-                                        <li>Aliquam tincidunt mauris eu risus.</li>
-                                        <li>Vestibulum auctor dapibus neque.</li>
-                                    </ol>
-                                </li>
-                                <li>Vestibulum auctor dapibus neque.</li>
-                                <li>Aliquam tincidunt mauris eu risus.</li>
-                            </ol>
-                        </li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.</li>
-                    </ol>
 
-                </div>
-
-                <div class="col-md-2 text-center">
-                    <button class="btn btn-danger btn-lg mt-3 container" onclick="firstSelector()">Try it
-                        1</button>
-
-                    <button class="btn btn-info btn-lg mt-3 container" onclick="secondSelector()">Try it
-                        2</button>
-
-                    <button class="btn btn-secondary btn-lg mt-3 container" onclick="thirdSelector()">Try it
-                        3</button>
-
-                    <button class="btn btn-primary btn-lg mt-3 container" onclick="window.location.reload()">Try
-                        it
-                        4</button>
-                </div>
-
-                <div class="col-md-5">
-                    <h1>My shopping list</h1>
-
-                    <div>
-                        <label for="item">Enter a new item:</label>
-                        <input type="text" name="item" id="item">
-                        <button id="aggregating-list">Add item</button>
-                    </div>
-
-                    <ul>
-
-                    </ul>
-                </div>
-
-            </div>
+        <div class="navbar-end">
+          <a href="availibility.html" class="navbar-item has-text-white">
+            Availibility
+          </a>
         </div>
-        <script id="lists">
-            function firstSelector() {
-                document.querySelector("li").style.backgroundColor = "#dc3545";
-            }
-            function secondSelector() {
-                var x = document.querySelectorAll("li");
-                var i;
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.backgroundColor = "#17a2b8";
-                }
-            }
-            function thirdSelector() {
-                document.querySelector("ol ol li").style.backgroundColor = "#6c757d";
-            }
-        </script>
-        <script id="shopping">
-            const list = document.querySelector('ul');
-            const input = document.querySelector('input');
-            const button = document.getElementById('aggregating-list');
+      </div>
+    </nav>
 
-            button.onclick = function () {
-                let myItem = input.value;
-                input.value = '';
+    <!-- Content Container-->
+    <div class="columns" style="height: 825px; background-color: #e7d7b7">
+      <div class="column is-half">
+        <div class="" style="margin-top: 13rem; margin-left: 3rem">
+          <h1
+            class="has-text-weight-bold is-uppercase"
+            style="color: #2a2e36; font-size: 60px"
+          >
+            Welcome to CSScape.
+          </h1>
 
-                const listItem = document.createElement('li');
-                const listText = document.createElement('span');
-                const listBtn = document.createElement('button');
-
-                listItem.appendChild(listText);
-                listText.textContent = myItem;
-                listItem.appendChild(listBtn);
-                listBtn.textContent = 'Delete';
-                list.appendChild(listItem);
-
-                listBtn.onclick = function (e) {
-                    list.removeChild(listItem);
-                }
-
-                input.focus();
-            }
-        </script>
-    </main>
-    <div id="container" style="height: 3000px; width: 1000px;">
-        <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
+          <h3 class="is-size-4">
+            We meet all your needs for Web Development. Contact us for more
+            information.
+          </h3>
+        </div>
+      </div>
+      <div class="column is-half" style="margin-top: 7rem">
+        <div>
+          <img src="images/CSScape logo.png" class="logo-large" />
+        </div>
+      </div>
     </div>
-</body>
 
+    <!--section for the link onthe home page-->
+    <div
+      class="columns linksection is-vcentered"
+      style="background-color: #2a2e36"
+    >
+      <div class="column is-three-fifths is-offset-one-fifth">
+        <h1
+          class="has-text-centered has-text-weight-bold js-scroll"
+          style="font-size: 125px"
+        >
+          <a href="aboutUs.html" style="color: #56a3a6">About Us</a>
+        </h1>
+      </div>
+    </div>
+    <div
+      class="columns linksection is-vcentered"
+      style="background-color: #56a3a6"
+    >
+      <div class="column is-three-fifths is-offset-one-fifth">
+        <h1
+          class="has-text-centered has-text-weight-bold js-scroll"
+          style="font-size: 125px"
+        >
+          <a href="prices.html" style="color: #fafafa">Prices</a>
+        </h1>
+      </div>
+    </div>
+    <div
+      class="columns linksection is-vcentered"
+      style="background-color: #a62639"
+    >
+      <div class="column is-three-fifths is-offset-one-fifth">
+        <h1
+          class="has-text-centered has-text-weight-bold js-scroll"
+          style="font-size: 125px"
+        >
+          <a href="availibility.html" style="color: #e7d7b7">Availibility</a>
+        </h1>
+      </div>
+    </div>
+
+    <!--start of the footer-->
+    <footer class="footer">
+      <div class="columns">
+        <div class="column">
+          <h2 class="is-size-2 has-text-weight-semibold">By Ethan Sutrick</h2>
+          <h4 class="is-size-4">
+            The creator of your favorite website ever, CSScape
+          </h4>
+        </div>
+        <div class="column">
+          <h3 class="is-size-4 has-text-weight-medium"><u>London</u></h3>
+
+          <ul class="ml-2 officeLocations">
+            <li>csscapeLondon@mail.com</li>
+            <li>Ruby St, London SE15 1LR, United Kingdom</li>
+            <li>+44 20 0183 7803</li>
+            <li class="pt-3">
+              <a
+                href="https://www.google.com/maps/place/Ruby+St,+London+SE15+1LR,+UK/@51.4832083,-0.0634128,17.96z/data=!4m6!3m5!1s0x4876030e2cdaaa3b:0xe4c4291e7685bfdb!8m2!3d51.4830279!4d-0.0615943!16s%2Fg%2F1tfjd__n?authuser=0&entry=ttu"
+                target="_blank"
+                class="mapLocation"
+                ><u>See on map</u></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3 class="is-size-4 has-text-weight-medium"><u>New York</u></h3>
+
+          <ul class="ml-2 officeLocations">
+            <li>csscapeNewYork@mail.com</li>
+            <li>New York, NY 10011</li>
+            <li>+1 587 8130 7194</li>
+            <li class="pt-3">
+              <a
+                href="https://www.google.com/maps/place/SBF+JOB/@40.7445578,-74.0077914,18z/data=!4m15!1m8!3m7!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2sNew+York,+NY!3b1!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2!3m5!1s0x89c2594287b2d16f:0x3d6e4f4411801fe9!8m2!3d40.7444946!4d-74.0072858!16s%2Fg%2F11f8fxl17t?authuser=0&entry=ttu"
+                target="_blank"
+                class="mapLocation"
+                ><u>See on map</u></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="columns mt-4">
+        <div class="column is-one-fifth">
+          <div style="font-size: 20px;">
+            Subscribe to our newsletter:
+          </div>
+        </div>
+        <div class="column is-three-fifths">
+          <div class="field has-addons">
+            <p class="control is-expanded">
+              <input
+                id="email-text"
+                class="input"
+                type="text"
+                placeholder="Email address for newsletter"
+              />
+            </p>
+            <p class="control">
+              <button onclick="newsSub()" class="button"> Subscribe </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--end of the footer-->
+  </body>
 </html>

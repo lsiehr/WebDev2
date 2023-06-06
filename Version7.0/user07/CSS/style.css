@@ -1,43 +1,60 @@
-.body-wideMargin {
-    margin: 50px;
-    font-size: 100%;
-    line-height: 1.5;
-    font-family: Roboto;
+.logo-large {
+  width: 600px;
+  height: 500px;
+  margin: 3rem;
+  animation: MoveUpDown 8s ease-in-out infinite;
+  position: relative;
+  left: 0;
+  bottom: 0;
 }
 
-button {
-    padding: 5px;
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+    left: auto;
+  }
+  50% {
+    bottom: 50px;
+    left: auto;
+  }
 }
 
-ol {
-    list-style-type: decimal-leading-zero;
+.dateBtn {
+  font-size: 18px;
+  color: #2a2e36;
+  background-color: transparent;
+  border: 3px solid #2a2e36;
+  border-radius: 8px;
+  transition: ease-in-out 0.3s;
 }
 
-ol ol {
-    margin-left: 0.9em;
+.dateBtn:hover {
+  color: #2a2e36;
+  border: 3px solid white;
+  scale: 115%;
 }
 
-ol li {
-    line-height: 1.5;
+.dateBtn:active {
+  border: 3px solid white;
 }
 
-li li {
-    list-style-type: lower-alpha;
+.dateTxt {
+  color: #2a2e36;
 }
 
-li li li {
-    list-style-type: square;
+.dateTxt:hover {
+  color: #2a2e36;
 }
 
-li li li li {
-    list-style-type: circle;
+
+.purchaseBtn {
+  background-color: transparent;
+  border: solid red 2px;
+  transition: ease-in-out 0.2s;
 }
 
-h1 {
-    font-family: "Fjalla One", sans-serif;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: 400;
-    border-bottom: 1px solid black;
-    margin-bottom: 1em;
+.purchaseBtn:hover {
+  scale: 115%;
+  border: solid rgb(195, 0, 0) 2px;
 }
