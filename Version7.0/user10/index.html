@@ -1,221 +1,604 @@
-<!DOCTYPE html>
-<html lang="en">
-<!--Version 7.0 
-    Name:  
-    Date Completed: 
--->
-
-<head>
-    <title>Dynamic Webpage</title>
-
-    <!-- Bootstrap meta data -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Introduction to JavaScript">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!-- Animate -->
-    <link rel="stylesheet" href="CSS/style.css">
-
-    <!-- JavaScript -->
-    <!-- These are needed to get the responsive menu to work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <style>
-        /* Internal Styling Here */
-    </style>
-
-</head>
-
-<body>
-    <main>
-        <div id="built-in-functions">
-            <!-- ALERT-->
-            <script>
-                alert('Go Sabers!');
-            </script>
-            <!--PRINT-->
-            <script>
-                function printWindow(){
-                    window.print();
-                }
-            </script>
-            <!--LENGTH-->
-            <script>
-                function getLength() {
-                    document.getElementById("length").innerHTML = document.title.length;
-                }
-            </script>
-            <!-- FOCUS-->
-            <script>
-                function getFocus() {
-                    document.getElementById("focusButton").focus();
-                }
-            </script>
-            <!-- CLICK-->
-            <script>
-                function clickSimulation() {
-                    document.getElementById("Check").click();
-                }
-            </script>
-            <script>
-                function getDate() {
-                    document.getElementById("date").innerHTML = Date();
-                }
-            </script>
-
-            <div class="container-fluid mt-3 mb-3">
-                <div class="row">
-                    <!--PRINT-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" value="print this page" onclick="printWindow()">Print this
-                            page</button>
-                    </div>
-                    <!--LENGTH-->
-                    <div class="col-md-3">
-                        <button class="btn btn-dark btn-md" onclick="getLength()">The title has this many
-                            characters</button>
-                    </div>
-                    <div class="col-md-1">
-                        <p id="length"></p>
-                    </div>
-                    <!--FOCUS-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getFocus()">Focus</button>
-                    </div>
-                    <!-- CLICK-->
-                    <div class="col-md-1">
-                        <form>
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                        </form>
-                    </div>
-                    <!--DATE-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getDate()">Get Date</button>
-                    </div>
-                    <div class="col-md-3">
-                        <p id="date"></p>
-                    </div>
-                </div>
-            </div>
+<nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="#"></a>
         </div>
-        <hr>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5">
-                    <h1>Heading for a long list</h1>
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                <li>Aliquam tincidunt mauris eu risus.
-                                    <ol>
-                                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            <ol>
-                                                <li>Lorem ipsum dolor sit amet, consectetuer.</li>
-                                            </ol>
-                                        </li>
-                                        <li>Aliquam tincidunt mauris eu risus.</li>
-                                        <li>Vestibulum auctor dapibus neque.</li>
-                                    </ol>
-                                </li>
-                                <li>Vestibulum auctor dapibus neque.</li>
-                                <li>Aliquam tincidunt mauris eu risus.</li>
-                            </ol>
-                        </li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.</li>
-                    </ol>
+        <div id="mainListDiv" class="main_list">
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-                </div>
-
-                <div class="col-md-2 text-center">
-                    <button class="btn btn-danger btn-lg mt-3 container" onclick="firstSelector()">Try it
-                        1</button>
-
-                    <button class="btn btn-info btn-lg mt-3 container" onclick="secondSelector()">Try it
-                        2</button>
-
-                    <button class="btn btn-secondary btn-lg mt-3 container" onclick="thirdSelector()">Try it
-                        3</button>
-
-                    <button class="btn btn-primary btn-lg mt-3 container" onclick="window.location.reload()">Try
-                        it
-                        4</button>
-                </div>
-
-                <div class="col-md-5">
-                    <h1>My shopping list</h1>
-
-                    <div>
-                        <label for="item">Enter a new item:</label>
-                        <input type="text" name="item" id="item">
-                        <button id="aggregating-list">Add item</button>
-                    </div>
-
-                    <ul>
-
-                    </ul>
-                </div>
-
-            </div>
+            <ul class="navlinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
-        <script id="lists">
-            function firstSelector() {
-                document.querySelector("li").style.backgroundColor = "#dc3545";
-            }
-            function secondSelector() {
-                var x = document.querySelectorAll("li");
-                var i;
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.backgroundColor = "#17a2b8";
-                }
-            }
-            function thirdSelector() {
-                document.querySelector("ol ol li").style.backgroundColor = "#6c757d";
-            }
-        </script>
-        <script id="shopping">
-            const list = document.querySelector('ul');
-            const input = document.querySelector('input');
-            const button = document.getElementById('aggregating-list');
-
-            button.onclick = function () {
-                let myItem = input.value;
-                input.value = '';
-
-                const listItem = document.createElement('li');
-                const listText = document.createElement('span');
-                const listBtn = document.createElement('button');
-
-                listItem.appendChild(listText);
-                listText.textContent = myItem;
-                listItem.appendChild(listBtn);
-                listBtn.textContent = 'Delete';
-                list.appendChild(listItem);
-
-                listBtn.onclick = function (e) {
-                    list.removeChild(listItem);
-                }
-
-                input.focus();
-            }
-        </script>
-    </main>
-    <div id="container" style="height: 3000px; width: 1000px;">
-        <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
     </div>
-</body>
+</nav>
 
+<section class="home">
+</section>
+<div style="height: 1000px">
+    <!-- just to make scrolling effect possible -->
+    
+    <h2 class="myH2"> 3D Model PC  </h2>
+
+        <!-- Jquery needed -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+        <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Quicksand", sans-serif;
+                font-size: 62.5%;
+                font-size: 10px;
+            }
+
+            /*-- Inspiration taken from abdo steif -->
+/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+
+            /* Navbar section */
+
+            .nav {
+                width: 100%;
+                height: 65px;
+                position: fixed;
+                line-height: 65px;
+                text-align: center;
+            }
+
+            .nav div.logo {
+                float: left;
+                width: auto;
+                height: auto;
+                padding-left: 3rem;
+            }
+
+            .nav div.logo a {
+                text-decoration: none;
+                color: #000000;
+                font-size: 2.5rem;
+            }
+
+            .nav div.logo a:hover {
+                color: #000000;
+            }
+
+            .nav div.main_list {
+                height: 65px;
+                float: right;
+            }
+
+            .nav div.main_list ul {
+                width: 100%;
+                height: 65px;
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .nav div.main_list ul li {
+                width: auto;
+                height: 65px;
+                padding: 0;
+                padding-right: 3rem;
+            }
+
+            .nav div.main_list ul li a {
+                text-decoration: none;
+                color: #fafafa;
+                line-height: 65px;
+                font-size: 2.4rem;
+            }
+
+            .nav div.main_list ul li a:hover {
+                color: #1785de;
+            }
+
+
+            /* Home section */
+
+            .home {
+                width: 100%;
+                height: 100vh;
+                background-image: url(https://cdn.shopify.com/s/files/1/0061/7594/8882/products/SY-PCBuild-Frost.png?v=1658745338);
+                background-position: center top;
+                background-size: cover;
+                Color:black
+            }
+
+            .navTrigger {
+                display: none;
+            }
+
+            .nav {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                -webkit-transition: all 0.4s ease;
+                transition: all 0.4s ease;
+            }
+
+
+            /* Media qurey section */
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                .container {
+                    margin: 0;
+                }
+            }
+
+            @media screen and (max-width:768px) {
+                .navTrigger {
+                    display: block;
+                }
+
+                .nav div.logo {
+                    margin-left: 15px;
+                }
+
+                .nav div.main_list {
+                    width: 100%;
+                    height: 0;
+                    overflow: hidden;
+                }
+
+                .nav div.show_list {
+                    height: auto;
+                    display: none;
+                }
+
+                .nav div.main_list ul {
+                    flex-direction: column;
+                    width: 100%;
+                    height: 100vh;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                    background-color: #111;
+                    /*same background color of navbar*/
+                    background-position: center top;
+                }
+
+                .nav div.main_list ul li {
+                    width: 100%;
+                    text-align: right;
+                }
+
+                .nav div.main_list ul li a {
+                    text-align: center;
+                    width: 100%;
+                    font-size: 3rem;
+                    padding: 20px;
+                }
+
+                .nav div.media_button {
+                    display: block;
+                }
+            }
+
+
+            /* Animation */
+            /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+            .navTrigger {
+                cursor: pointer;
+                width: 30px;
+                height: 25px;
+                margin: auto;
+                position: absolute;
+                right: 30px;
+                top: 0;
+                bottom: 0;
+            }
+
+            .navTrigger i {
+                background-color: #000000;
+                border-radius: 2px;
+                content: '';
+                display: block;
+                width: 100%;
+                height: 4px;
+            }
+
+            .navTrigger i:nth-child(1) {
+                -webkit-animation: outT 0.8s backwards;
+                animation: outT 0.8s backwards;
+                -webkit-animation-direction: reverse;
+                animation-direction: reverse;
+            }
+
+            .navTrigger i:nth-child(2) {
+                margin: 5px 0;
+                -webkit-animation: outM 0.8s backwards;
+                animation: outM 0.8s backwards;
+                -webkit-animation-direction: reverse;
+                animation-direction: reverse;
+            }
+
+            .navTrigger i:nth-child(3) {
+                -webkit-animation: outBtm 0.8s backwards;
+                animation: outBtm 0.8s backwards;
+                -webkit-animation-direction: reverse;
+                animation-direction: reverse;
+            }
+
+            .navTrigger.active i:nth-child(1) {
+                -webkit-animation: inT 0.8s forwards;
+                animation: inT 0.8s forwards;
+            }
+
+            .navTrigger.active i:nth-child(2) {
+                -webkit-animation: inM 0.8s forwards;
+                animation: inM 0.8s forwards;
+            }
+
+            .navTrigger.active i:nth-child(3) {
+                -webkit-animation: inBtm 0.8s forwards;
+                animation: inBtm 0.8s forwards;
+            }
+
+            @-webkit-keyframes inM {
+                50% {
+                    -webkit-transform: rotate(0deg);
+                }
+
+                100% {
+                    -webkit-transform: rotate(45deg);
+                }
+            }
+
+            @keyframes inM {
+                50% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(45deg);
+                }
+            }
+
+            @-webkit-keyframes outM {
+                50% {
+                    -webkit-transform: rotate(0deg);
+                }
+
+                100% {
+                    -webkit-transform: rotate(45deg);
+                }
+            }
+
+            @keyframes outM {
+                50% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(45deg);
+                }
+            }
+
+            @-webkit-keyframes inT {
+                0% {
+                    -webkit-transform: translateY(0px) rotate(0deg);
+                }
+
+                50% {
+                    -webkit-transform: translateY(9px) rotate(0deg);
+                }
+
+                100% {
+                    -webkit-transform: translateY(9px) rotate(135deg);
+                }
+            }
+
+            @keyframes inT {
+                0% {
+                    transform: translateY(0px) rotate(0deg);
+                }
+
+                50% {
+                    transform: translateY(9px) rotate(0deg);
+                }
+
+                100% {
+                    transform: translateY(9px) rotate(135deg);
+                }
+            }
+
+            @-webkit-keyframes outT {
+                0% {
+                    -webkit-transform: translateY(0px) rotate(0deg);
+                }
+
+                50% {
+                    -webkit-transform: translateY(9px) rotate(0deg);
+                }
+
+                100% {
+                    -webkit-transform: translateY(9px) rotate(135deg);
+                }
+            }
+
+            @keyframes outT {
+                0% {
+                    transform: translateY(0px) rotate(0deg);
+                }
+
+                50% {
+                    transform: translateY(9px) rotate(0deg);
+                }
+
+                100% {
+                    transform: translateY(9px) rotate(135deg);
+                }
+            }
+
+            @-webkit-keyframes inBtm {
+                0% {
+                    -webkit-transform: translateY(0px) rotate(0deg);
+                }
+
+                50% {
+                    -webkit-transform: translateY(-9px) rotate(0deg);
+                }
+
+                100% {
+                    -webkit-transform: translateY(-9px) rotate(135deg);
+                }
+            }
+
+            @keyframes inBtm {
+                0% {
+                    transform: translateY(0px) rotate(0deg);
+                }
+
+                50% {
+                    transform: translateY(-9px) rotate(0deg);
+                }
+
+                100% {
+                    transform: translateY(-9px) rotate(135deg);
+                }
+            }
+
+            @-webkit-keyframes outBtm {
+                0% {
+                    -webkit-transform: translateY(0px) rotate(0deg);
+                }
+
+                50% {
+                    -webkit-transform: translateY(-9px) rotate(0deg);
+                }
+
+                100% {
+                    -webkit-transform: translateY(-9px) rotate(135deg);
+                }
+            }
+
+            @keyframes outBtm {
+                0% {
+                    transform: translateY(0px) rotate(0deg);
+                }
+
+                50% {
+                    transform: translateY(-9px) rotate(0deg);
+                }
+
+                100% {
+                    transform: translateY(-9px) rotate(135deg);
+                }
+            }
+
+            .affix {
+                padding: 0;
+                background-color: #111;
+            }
+
+
+
+
+
+
+            .myH2 {
+                text-align: center;
+                font-size: 4rem;
+            }
+
+            .myP {
+                text-align: justify;
+                padding-left: 15%;
+                padding-right: 15%;
+                font-size: 20px;
+            }
+
+            @media all and (max-width:700px) {
+                .myP {
+                    padding: 2%;
+                }
+            }
+        </style>
+
+        <html>
+
+        <head>
+            <style>
+                * {
+                    box-sizing: border-box;
+                }
+
+                .column {
+                    float: left;
+                    width: 33.33%;
+                    padding: 5px;
+                }
+
+                /* Clearfix (clear floats) */
+                .row::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+            </style>
+        </head>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS styles for the canvas */
+    #canvas {
+      width: 800px;
+      height: 600px;
+    }
+  </style>
+</head>
+<body>
+  <div id="canvas"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+    // Create a scene
+    const scene = new THREE.Scene();
+
+    // Create a camera
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.z = 5;
+
+    // Create a renderer
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.getElementById('canvas').appendChild(renderer.domElement);
+
+    // Create a PC case
+    const caseGeometry = new THREE.BoxGeometry(2.5, 3, 1.5);
+    const caseMaterial = new THREE.MeshBasicMaterial({ color: 0x808080, transparent: true, opacity: 0.5 });
+    const pcCase = new THREE.Mesh(caseGeometry, caseMaterial);
+    scene.add(pcCase);
+
+    // Create an ATX motherboard
+    const motherboardGeometry = new THREE.BoxGeometry(1.50, 1.50, 0.1);
+    const motherboardMaterial = new THREE.MeshStandardMaterial({ color: 0x0000ff });
+    const motherboard = new THREE.Mesh(motherboardGeometry, motherboardMaterial);
+    motherboard.position.x = 0.40;
+    motherboard.position.y = 0.60;
+    motherboard.position.z = 0.50;
+    pcCase.add(motherboard);
+
+    // Create a CPU
+    const cpuGeometry = new THREE.BoxGeometry(0.3, 0.3, 0.09);
+    const cpuMaterial = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
+    const cpu = new THREE.Mesh(cpuGeometry, cpuMaterial);
+    cpu.position.x = 0.20;
+    cpu.position.y = 0.30;
+    cpu.position.z = -0.05;
+    motherboard.add(cpu);
+
+    // Create a GPU
+    const gpuGeometry = new THREE.BoxGeometry(0.90, 0.2, 0.15);
+    const gpuMaterial = new THREE.MeshStandardMaterial({ color: 0xff0000 });
+    const gpu = new THREE.Mesh(gpuGeometry, gpuMaterial);
+    gpu.position.x = 0.25;
+    gpu.position.y = -0.40;
+    gpu.position.z = -0.15;
+    motherboard.add(gpu);
+
+    // Create RAM sticks
+    const ramGeometry = new THREE.BoxGeometry(0.05, 0.5, 0.2);
+    const ramMaterial = new THREE.MeshStandardMaterial({ color: 0xffffff });
+    const ram1 = new THREE.Mesh(ramGeometry, ramMaterial);
+    ram1.position.x = -0.1;
+    ram1.position.y = 0.3;
+    ram1.position.z = -0.1;
+    motherboard.add(ram1);
+
+    const ram2 = new THREE.Mesh(ramGeometry, ramMaterial);
+    ram2.position.x = -0.2;
+    ram2.position.y = 0.3;
+    ram2.position.z = -0.1;
+    motherboard.add(ram2);
+
+     // Create fans
+     function createFan(radius) {
+      const fanGeometry = new THREE.BoxGeometry(0.1, 0.75, 0.75);
+      const fanMaterial = new THREE.MeshStandardMaterial({ color: 0xffffff });
+      const fan = new THREE.Mesh(fanGeometry, fanMaterial);
+      fan.position.z = -0.8;
+      pcCase.add(fan);
+      return fan;
+    }
+
+    const fan1 = createFan(0.1);
+    fan1.position.x = -1;
+    fan1.position.y = -0.9;
+    fan1.position.z = 0;
+
+    const fan2 = createFan(0.1);
+    fan2.position.x = -1;
+    fan2.position.y = 0;
+    fan2.position.z = 0;
+
+    const fan3 = createFan(0.1);
+    fan3.position.x = -1;
+    fan3.position.y = 0.9;
+    fan3.position.z = 0;
+
+    const fan4 = createFan(0.1);
+    fan4.position.x = 1.1;
+    fan4.position.y = 0.7;
+    fan4.position.z = -0.1;
+
+    
+    // Create a PSU
+    const psuGeometry = new THREE.BoxGeometry(0.8, 0.5, 1);
+    const psuMaterial = new THREE.MeshStandardMaterial({ color: 0x808080 });
+    const psu = new THREE.Mesh(psuGeometry, psuMaterial);
+    psu.position.x = 0.8;
+    psu.position.y = -1;
+    psu.position.z = 0;
+    pcCase.add(psu);
+
+    // Create ambient light
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+    scene.add(ambientLight);
+
+    // Create directional light
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+    directionalLight.position.set(5, 3, 5);
+    scene.add(directionalLight);
+
+    // Animation loop
+    function animate() {
+      requestAnimationFrame(animate);
+      pcCase.rotation.y += 0.01;
+      renderer.render(scene, camera);
+    }
+    animate();
+  </script>
+</body>
 </html>
+

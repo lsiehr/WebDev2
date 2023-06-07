@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jump Over Obstacles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    #loading-screen {
+      width: 400px;
+      margin: 200px auto;
+      text-align: center;
+    }
+
+    #progress-bar {
+      width: 100%;
+      height: 20px;
+      border: 1px solid #000;
+      background-color: #fff;
+    }
+
+    #progress {
+      height: 100%;
+      background-color: #00ff00;
+    }
+
+    #game-container {
+      display: none;
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    #score {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    #player {
+      position: absolute;
+      bottom: 0;
+      width: 50px;
+      height: 50px;
+      background-color: #0000ff;
+    }
+
+    #obstacle {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      background-color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <div id="loading-screen">
+    <h1>Loading...</h1>
+    <div id="progress-bar">
+      <div id="progress"></div>
+    </div>
+    <button id="start-button" disabled>Start</button>
+  </div>
+
+  <div id="game-container">
+    <div id="score">Score: 0</div>
+    <div id="player"></div>
+    <div id="obstacle"></div>
+  </div>
+
+  <script>
+    // Game logic goes here
+
+    // Constants
+    const containerWidth = 800;
+    const playerHeight = 50;
+    const obstacleWidth = 50;
+    const jumpHeight = 200;
+    const obstacleSpeed = 5;
+
+    // Variables
+    let gameInterval;
+    let playerPosition;
+    let obstaclePosition;
+    let score;
+
+    // Function to initialize the game
+    function initGame() {
+      playerPosition = containerWidth / 2;
+      obstaclePosition = containerWidth;
+      score = 0;
+      updateScore();
+
+      // Event listener for jump action
+      document.addEventListener('keyup', function(event) {
+        if (event.key === ' ') {
+          jump();
+        }
+      });
+
+      // Start game loop
+      gameInterval = setInterval(updateGame, 20);
+    }
+
+    // Function to update the game state
+    function updateGame() {
+      // Move obstacle
+      obstaclePosition -= obstacleSpeed;
+
+      // Check for collision
+      if (obstaclePosition <= playerPosition + obstacleWidth && obstaclePosition + obstacleWidth >= playerPosition && playerHeight === jumpHeight) {
+        endGame();
+        return;
+      }
+
+      // Update score
+      score += 1;
+      updateScore();
+
+      // Check for obstacle offscreen
+      if (obstaclePosition <= 0) {
+        obstaclePosition = containerWidth;
+      }
+
+      // Update player position
+      document.getElementById('player').style.left = playerPosition + 'px';
+      document.getElementById('obstacle').style.right = obstaclePosition + 'px';
+    }
+
+    // Function to handle the jump action
+    function jump() {
+      if (playerHeight === 0) {
+        playerHeight = jumpHeight;
+        document.getElementById('player').style.height = playerHeight + 'px';
+      }
+    }
+
+    // Function to end the game
+    function endGame() {
+      clearInterval(gameInterval);
+      alert('Game over! Your score: ' + score);
+      resetGame();
+    }
+
+    // Function to reset the game
+    function resetGame() {
+      playerHeight = 0;
+      document.getElementById('player').style.height = playerHeight + 'px';
+      document.getElementById('start-button').disabled = false;
+    }
+
+    // Function to update the score display
+    function updateScore() {
+      document.getElementById('score').textContent = 'Score: ' + score;
+    }
+
+    // Loading progress
+    let progress = 0;
+    const progressElement = document.getElementById('progress');
+    const startButton = document.getElementById('start-button');
+
+    const loadingInterval = setInterval(() => {
+      progress += 1;
+      progressElement.style.width = progress + '%';
+
+      if (progress === 100) {
+        clearInterval(loadingInterval);
+        startButton.disabled = false;
+      }
+    }, 50);
+
+    // Event listener for start button click
+    startButton.addEventListener('click', function() {
+      document.getElementById('loading-screen').style.display = 'none';
+      document.getElementById('game-container').style.display = 'block';
+      initGame();
+    });
+  </script>
+</body>
+</html>
